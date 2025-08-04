@@ -414,11 +414,7 @@ def show_student_report():
         
         # Exploration tags
         st.subheader("🔍 Curiosity Exploration Paths")
-        for tag in student_data['exploration_tags']:
-            st.tag(tag)  # This won't work in normal Streamlit, but shows the concept
-        
-        # Alternative for tags since st.tag doesn't exist
-        st.markdown("**Exploration Topics:**")
+        st.markdown("**Topics this student explored:**")
         for tag in student_data['exploration_tags']:
             st.write(f"🏷️ {tag}")
         
